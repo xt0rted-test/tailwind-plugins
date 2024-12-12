@@ -1,0 +1,19 @@
+{
+  "name": "tailwind-plugins",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm run css1 && npm run css2 && npm run css3 && npm run css4 && npm run css5 && npm run css6",
+    "css1": "tailwindcss -i ./styles.css -o ./dist/styles1.css -c tailwind.config.js",
+    "css2": "tailwindcss -i ./styles.css -o ./dist/styles2.css -c tailwind.config.mjs",
+    "css3": "tailwindcss -i ./styles.css -o ./dist/styles3.css -c tailwind.config.js",
+    "css4": "cross-env NODE_OPTIONS=\"--no-experimental-require-module\" tailwindcss -i ./styles.css -o ./dist/styles4.css -c tailwind.config.js",
+    "css5": "tailwindcss -i ./styles.css -o ./dist/styles5.css -c tailwind.config2.js",
+    "css6": "tailwindcss -i ./styles.css -o ./dist/styles6.css -c tailwind.config2.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "cross-env": "^7.0.3",
+    "tailwindcss": "^3.4.16"
+  }
+}
